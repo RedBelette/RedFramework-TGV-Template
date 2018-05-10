@@ -1,0 +1,68 @@
+// @see https://community.bistudio.com/wiki/Description.ext
+
+// Un exemple de configuration du framework pour la team TGV
+// Aucune de ses informations ne sont obligatoire, le framework utilisera des valeurs par défaut.
+class RedFrameworkConfig {
+
+	// configure certaines fonctionnalités pour vos missions
+	// les valeurs par défaut de toutes les fonctionnalités sont sur false.
+	class missionCfg {
+		// Ajoute les bouchons d'oreilles dans votre inventaire au départ de la mission
+		// Attention votre inventaire ne doit pas être plein
+		addItemEarPlugs=true;
+		// Met les bouchons d'oreilles s'ils sont dans l'inventaires dans vos oreilles
+		putInEarPlugs=true;
+		// Active la sécurité de votre arme au départ de la mission
+		putSafeMode=true;
+	};
+
+	// Si vous souhaitez créé un choix de mission aléatoire.
+	// Script: call RF_fnc_missionGenerator;
+	// missionPaths contient les chemins des scripts de vos missions
+	// un tableau peut également être ajouté pour spécifier le script et si oui/non la mission sera rejouer.
+	class MissionGenerator {
+		// Exemple:
+		/*missionPaths[] = {
+			"script\mission\missionSeraRejouerIndefiniment.sqf",
+			{"script\mission\missionSeraJouerUneSeuleFois.sqf", false}
+		};*/
+	};
+
+	//*******************************************************************************//
+	// Les fonctionnalités de combatpatrol_ personnalise les fonctions suivantes:   *//
+	// - RF_fnc_spawnGarrison														*//
+	// - RF_fnc_spawnCirclePatrols													*//
+	//*******************************************************************************//
+
+	// Défini la faction ennemie. Impacte les deux fonctions cité plus haut.
+	class combatPatrol_CfgEnemis {
+		// Exemple:
+		// side = "east";
+	};
+
+	// Défini la fonction RF_fnc_spawnCirclePatrols
+	class combatPatrol_SpawnCirclePatrols {
+		// Exemple:
+		/*distance = 200;
+		unitTypes[] = {{"LOP_US_Infantry_SL", "LOP_US_Infantry_Rifleman_4", "LOP_US_Infantry_TL"}, {"LOP_US_Infantry_MG_2", "LOP_US_Infantry_MG_Asst"}, {"LOP_US_Infantry_Rifleman_2", "LOP_US_Infantry_Rifleman_4"}, {"LOP_US_Infantry_Rifleman_2", "LOP_US_Infantry_Rifleman_4", "LOP_US_Infantry_MG_Asst", "LOP_US_Infantry_MG_2"}};
+		radiusPatrols[] = {50, 100, 200};*/
+	};
+
+	// Défini la fonction RF_fnc_spawnGarrison
+	class combatPatrol_SpawnGarrison {
+		// Exemple:
+		/*distance = 100;
+		unitTypes[] = {{"LOP_US_Infantry_SL", "LOP_US_Infantry_Rifleman_4", "LOP_US_Infantry_TL"}, {"LOP_US_Infantry_MG_2", "LOP_US_Infantry_MG_Asst"}, {"LOP_US_Infantry_Rifleman_2", "LOP_US_Infantry_Rifleman_4"}, {"LOP_US_Infantry_Rifleman_2", "LOP_US_Infantry_Rifleman_4", "LOP_US_Infantry_MG_Asst", "LOP_US_Infantry_MG_2"}};
+		ramdomizeDistance = 80;*/
+	};
+
+	// Défini l'exemple de mission helicopter crash in town (exemple du serveur combat patrol TGV)
+	class combatPatrol_missions {
+		class combatPatrol_helicopterCrashInTown {
+			// Exemple:
+			/*helicopterClass = "B_Heli_Light_01_dynamicLoadout_F";
+			unitTypes[] = {{"LOP_US_Infantry_SL", "LOP_US_Infantry_Rifleman_4", "LOP_US_Infantry_TL"}};*/
+		};
+	};
+
+};
