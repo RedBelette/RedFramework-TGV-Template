@@ -16,6 +16,7 @@ Ce template a pour but d'aider les membres TGV a créé des missions avec le fra
     \lib (Placez le code récupéré ailleurs dans ce répertoire)
     \media (Placez votre contenu multimédia ici)
     \script (Placez vos scripts à cet endroit)
+	cba_settings.sqf (La configuration ace spéciale à TGV)
     init.sqf (Le code placé ici sera lancé sur les clients et le serveur. Il contient notamment le briefing.)
     initServer.sqf (Je vous conseille d'éditer dans ce fichier qui a pour avantage de n'être utiliser que sur le serveur au départ de la mission.)
     description.ext (Le fichier de configuration de votre mission et du framework)
