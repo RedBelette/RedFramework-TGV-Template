@@ -1,0 +1,1 @@
+// Ajouter ici un code pour jouer la mission sans lancer le générique par exemple

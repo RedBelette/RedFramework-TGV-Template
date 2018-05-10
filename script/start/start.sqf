@@ -1,0 +1,1 @@
+// Ajouter ici le code de votre générique du début et les premiers paramètres nécessaire au démarrage de votre mission.
