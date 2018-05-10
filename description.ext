@@ -1,4 +1,11 @@
+// ENLEVER LE CODE DONT VOUS NE VOUS SERVEZ PAS POUR SIMPLIFIER LA LECTURE.
+
 // @see https://community.bistudio.com/wiki/Description.ext
+
+// https://community.bistudio.com/wiki/Arma_3_Respawn
+respawnOnStart = -1;
+// https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#export-and-import-function
+cba_settings_hasSettingsFile = 1;
 
 // Un exemple de configuration du framework pour la team TGV
 // Aucune de ses informations ne sont obligatoire, le framework utilisera des valeurs par défaut.
@@ -66,3 +73,62 @@ class RedFrameworkConfig {
 	};
 
 };
+
+/*
+class CfgMusic
+{
+	tracks[]={};
+
+	class BlackSabbath
+	{
+		name = "BlackSabbath";
+		sound[] = {"\media\music\blacksabbath.ogg", db+10, 1.0};
+	};
+};
+
+class CfgSounds {
+  	class PowerOff {
+    	name = "";
+    	sound[] = {"media\sound\powerdown.ogg", 1, 1};
+    	titles[] = {1, ""};
+  	};
+};
+
+// Attention le CfgSFX doit correspondre au CfgVehicles
+class CfgSFX
+{
+	class Monster_SFX
+	{
+		name = "Monster scream";
+		sound0[] = {"media\sfx\monsterscream1.ogg", 5, 1.0, 20, 0.2, 0, 15, 30};
+		sound1[] = {"media\sfx\monsterscream2.ogg", 5, 1.0, 20, 0.2, 0, 15, 30};
+		sound2[] = {"media\sfx\monsterscream3.ogg", 5, 1.0, 20, 0.2, 0, 15, 30};
+		sound3[] = {"media\sfx\monsterscream4.ogg", 5, 1.0, 20, 0.2, 0, 15, 30};
+		sounds[] = {sound0, sound1, sound2, sound3};
+		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
+	};
+};
+
+class CfgVehicles
+{
+	class Monster_SFX // class name to be used with createSoundSource
+	{
+		sound = "Monster_SFX"; // reference to CfgSFX class
+	};
+};
+
+class CfgIdentities
+{
+    class Yeltsin
+    {
+		name = "Vladimir Yeltsin";
+        face="WhiteHead_20";
+		glasses="None";
+		speaker="RHS_Male03RUS";
+		pitch=1.0;
+    };
+};*/
+
+
+
+
